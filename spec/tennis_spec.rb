@@ -9,9 +9,9 @@ describe Game do
         end
     end
 
-    # context "player one wins point" do
-    #     it "returns score of [15, 0]" do
-            
-    #     end
-    # end
+    context "player one wins point" do
+        it "returns score of [15, 0]" do
+            expect(new_game.update_score).to eq([15, 0])
+        end
+    end
 end
