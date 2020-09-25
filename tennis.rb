@@ -5,7 +5,15 @@ class Game
         @score = [0, 0]
     end
 
-    def update_score
-        [15,0]
+    def update_score(player)
+        if player == "1"
+            return [15, 0]
+        end
+        if player == "2"
+            return [15, 15]
+        end
     end
+
+
 end
+
