@@ -1,10 +1,17 @@
 require './tennis'
 
 describe Game do
+    let(:new_game) {Game.new}
+
     context "initializes at 0 score" do
-        it "returns a score of 0,0" do
-            new_game = Game.new
+        it "returns a score of [0, 0]" do
             expect(new_game.score).to eq([0, 0])
         end
     end
+
+    # context "player one wins point" do
+    #     it "returns score of [15, 0]" do
+            
+    #     end
+    # end
 end
