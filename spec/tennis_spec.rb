@@ -16,10 +16,16 @@ describe Game do
     end
 
     context "player two wins point" do
-        it "returns score of [15, 15]" do
-            expect(new_game.update_score("2")).to eq([15, 15])
+        new_game = Game.new
+        it "returns score of [0, 15]" do
+            expect(new_game.update_score("2")).to eq([0, 15])
         end
     end
 
+    # context "player wins a point, followed by player two" do
+    #     it "returns score of [15, 15]" do
+    #         expect(new_game.update_score("2")).to eq([15, 15])
+    #     end
+    # end
     
 end

@@ -10,7 +10,7 @@ class Game
             return [15, 0]
         end
         if player == "2"
-            return [15, 15]
+            return [0, 15]
         end
     end
 
